@@ -39,7 +39,7 @@ submit.addEventListener("click", function () {
     localStorage.users = JSON.stringify(users);
     console.log("The data was saved.");
 
-    window.location = "./blog.html";
+    window.location = "blog.html";
   }
 });
 
