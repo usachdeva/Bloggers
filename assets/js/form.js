@@ -38,6 +38,8 @@ submit.addEventListener("click", function () {
     // saving data to usesr's array ad It only accepts the string values
     localStorage.users = JSON.stringify(users);
     console.log("The data was saved.");
+
+    window.location = "./blog.html";
   }
 });
 
