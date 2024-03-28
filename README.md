@@ -16,6 +16,8 @@ To store personal thoughts and experiences on daily basis
 ```
 WHEN the main page opens,
 THEN a form will be shown containing labels and inputs for username, blog title, and blog content.
+WHEN click on the 'Back' button,
+THEN the user will go to the main page.
 WHEN click on the 'icon',
 THEN the mode of the page will be applied as per the icon.
 WHEN click on the 'blogs',

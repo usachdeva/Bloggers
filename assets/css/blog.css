@@ -21,3 +21,12 @@
   color: grey;
   padding: 10px;
 }
+
+.navbar #right-nav li {
+  display: inline;
+  position: relative;
+  top: -20px;
+  left: 85%;
+  font-size: 20px;
+  margin: 5px;
+}

@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid;
-  margin: 1px;
+  margin: 5px;
   padding: 2px;
   width: 100%;
 }
@@ -46,6 +46,14 @@
 #submit a {
   font-size: 16px;
   font-weight: normal;
+}
+
+/* buttons */
+button {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  left: 30%;
 }
 
 /* adding resolutions */

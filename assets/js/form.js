@@ -8,11 +8,14 @@ submit.addEventListener("click", function () {
   event.preventDefault();
 
   if (nameInput.value == "") {
-    alert("Enter the name!");
+    alert("Complete the form!");
+    nameInput.setAttribute("style", "border-color:red");
   } else if (titleInput.value == "") {
-    alert("Enter the title of the blog!");
+    alert("Complete the form!");
+    titleInput.setAttribute("style", "border-color:red");
   } else if (contentInput.value == "") {
-    alert("Enter you thoughts/experiences for the day");
+    alert("Complete the form!");
+    contentInput.setAttribute("style", "border-color:red");
   } else {
     // checking if there is any data with key "users"
     let users;
