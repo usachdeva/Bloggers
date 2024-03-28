@@ -1,4 +1,23 @@
-.blog {
-  border: 2px solid black;
-  margin: 3px;
+.blog-content {
+  border: 2px solid;
+  margin: 5px;
+}
+
+.blog-title {
+  border-bottom: 2px solid;
+  padding: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-info {
+  padding: 3px;
+}
+
+.blog-footer {
+  position: relative;
+  left: 5px;
+  font-family: cursive;
+  color: grey;
+  padding: 10px;
 }

@@ -38,7 +38,7 @@ const printVal = () => {
 
       p.textContent = user.content;
 
-      section1.textContent = user.name;
+      section1.textContent = `Posted by : ${user.name}`;
 
       // adding elements to the parent element
       figure.append(section);

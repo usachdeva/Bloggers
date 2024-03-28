@@ -1,7 +1,8 @@
 let icon = document.querySelector("i");
 let iconCl = icon.classList.contains("fa-sun");
 let body = document.querySelector("body");
-let anchor = document.querySelector("a");
+let anchor = document.querySelectorAll("a");
+console.log(anchor[0].textContent);
 
 icon.addEventListener("click", () => {
   if (body.classList.contains("light-theme")) {
@@ -14,7 +15,7 @@ icon.addEventListener("click", () => {
     body.classList.add("dark-theme");
 
     // color for the links
-    anchor.style.color = "white";
+    anchor.style.color = "#FFFFFF";
 
     console.log("light-theme");
   } else {
@@ -24,7 +25,7 @@ icon.addEventListener("click", () => {
     body.classList.remove("dark-theme");
     body.classList.add("light-theme");
 
-    anchor.style.color = "black";
+    anchor.style.color = "#000000";
 
     console.log("dark-theme");
   }
