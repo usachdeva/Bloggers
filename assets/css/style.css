@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-color: #000000;
+  --light-color: #ffffff;
+}
+
+header {
+  border-bottom: 2px solid black;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--light-color);
+  margin: 20px 0 10px 0;
+  padding: 10px;
+}
+
+.navbar #left-nav li {
+  display: inline;
+  padding: 0 20px 0 10px;
+  font-size: 20px;
+}
+
+.dark-theme {
+  background-color: var(--dark-color);
+  border-bottom: 1px solid var(--light-color);
+  color: var(--light-color);
+}
+
+.light-theme {
+  background-color: var(--light-color);
+  border-bottom: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  min-width: 100%;
+  padding: 10px;
+}
+
+#left-side,
+#right-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--dark-color);
+  margin: 1px;
+}
+
+#first-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  color: red;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* hovering for the links */
+a:hover {
+  font-size: 35px;
+}
+
+/* footer of the page */
+footer {
+  border-top: 2px solid var(--dark-color);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+p {
+  margin-top: 10px;
+}
