@@ -40,3 +40,9 @@ Deploy link: https://usachdeva.github.io/Bloggers/
 ```
 
 ## Screenshot
+
+![alt text](assets/images/blog_page.png)
+
+![alt text](assets/images/index_page_dark.png)
+
+![alt text](assets/images/index_page_light.png)
