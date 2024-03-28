@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs create</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
 </head>
 
-<body>
+<body class="light-theme">
     <header>
         <div class="navbar">
             <ul id="left-nav">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./blog.html">blogs</a></li>
-                <li><i class="fa-solid fa-sun"></i></li>
+            </ul>
+            <ul id="right-nav">
+                <li><i class="fas fa-sun"></i></li>
             </ul>
         </div>
 
@@ -30,13 +35,15 @@
             </figure>
             <figure id="right-side">
                 <form action="#">
-                    <p>Please Enter You details and the blog</p>
+                    <p id="form-title">
+                        What's on your mind :
+                    </p>
                     <p>Enter Your UserName : </p>
-                    <input id="name" type="text" placeholder="Enter your name">
+                    <input id="name" type="text" placeholder="Enter your name" size="40">
                     <p>Enter the Title for the new blog : </p>
-                    <input id="title" type="text" placeholder="title of the blog">
+                    <input id="title" type="text" placeholder="title of the blog" size="40">
                     <p>Content : </p>
-                    <textarea name="content" id="content" cols="30" rows="10" placeholder="Type your blog"></textarea>
+                    <textarea name="content" id="content" cols="42" rows="10" placeholder="Type your blog"></textarea>
                     <br>
                     <button id="submit">Submit</button>
                     <button id="reset">Reset</button>
@@ -49,7 +56,9 @@
         <p><a href="https://usachdeva.github.io/Portfolio/" target="_blank">&#169;Udit Sachdeva</a></p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>

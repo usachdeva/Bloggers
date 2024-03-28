@@ -1,0 +1,66 @@
+:root {
+  --dark-color: #000000;
+  --light-color: #ffffff;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-side,
+#right-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  margin: 1px;
+  padding: 2px;
+  width: 100%;
+}
+
+#first-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  color: red;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+#form-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* submit button link */
+#submit a {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* adding resolutions */
+@media screen and (min-width: 996px) {
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left-side,
+  #right-side {
+    margin: 5px;
+    max-width: 49%;
+    height: 400px;
+  }
+}

@@ -1,19 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* basic css for the regular webpage */
 :root {
   --dark-color: #000000;
   --light-color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* changing themes */
+.dark-theme {
+  background-color: var(--dark-color);
+  border-bottom: 2px solid var(--light-color);
+  color: var(--light-color);
+  border-color: var(--light-color);
+}
+
+.light-theme {
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--dark-color);
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+/* navbar */
 header {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid;
 }
 
 .navbar {
-  border-bottom: 1px solid var(--light-color);
   margin: 20px 0 10px 0;
   padding: 10px;
 }
@@ -24,59 +77,20 @@ header {
   font-size: 20px;
 }
 
-.dark-theme {
-  background-color: var(--dark-color);
-  border-bottom: 1px solid var(--light-color);
-  color: var(--light-color);
+.navbar #right-nav li {
+  display: inline;
+  position: relative;
+  top: -20px;
+  left: 95%;
+  font-size: 20px;
 }
 
-.light-theme {
-  background-color: var(--light-color);
-  border-bottom: 1px solid var(--dark-color);
-  color: var(--dark-color);
-}
-
-#container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-figure {
-  min-width: 100%;
-  padding: 10px;
-}
-
-#left-side,
-#right-side {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--dark-color);
-  margin: 1px;
-}
-
-#first-blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--dark-color);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
-  color: red;
-  font-weight: bolder;
-  font-size: 40px;
-}
-
+/* links */
 a {
   text-decoration: none;
-  color: var(--dark-color);
   font-weight: bolder;
   font-size: 20px;
+  color: var(--dark-color);
 }
 
 /* hovering for the links */
@@ -86,7 +100,7 @@ a:hover {
 
 /* footer of the page */
 footer {
-  border-top: 2px solid var(--dark-color);
+  border-top: 2px solid;
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
